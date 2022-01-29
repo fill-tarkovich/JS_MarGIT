@@ -1,0 +1,24 @@
+body {
+  width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  background-color: brown;
+  text-transform: uppercase;
+  font-size: medium;
+  border-radius: 20px;
+}
+
+.input {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
