@@ -15,7 +15,7 @@ const setGradient = () => {
   console.log(color2.value);
   console.log(radio);
   document.body.style.backgroundImage = `linear-gradient( ${dir},${color1.value}, ${color2.value})`;
-  code.textContent = `linear-gradient( ${dir},${color1.value}, ${color2.value})`;
+  code.textContent = `linear-gradient(${dir}, ${color1.value}, ${color2.value})`;
 };
 
 form.addEventListener("change", setGradient);

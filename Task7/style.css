@@ -3,6 +3,8 @@ body {
   background-image: linear-gradient(#ffa500, #ffff00);
   background-repeat: no-repeat;
   font-family: "PT Sans", sans-serif;
+  overflow: hidden;
+  color: rgb(34, 34, 34);
 }
 
 .wrapper {
@@ -15,19 +17,51 @@ body {
   text-align: center;
 }
 
+h1 {
+  font-size: 52px;
+}
+
+input[type="color"] {
+  width: 155px;
+  height: 80px;
+  border: none;
+  background-color: white;
+  padding: 0;
+}
+
 h2 {
-  margin-bottom: 50px;
+  margin-top: 65px;
+  margin-bottom: 25px;
+  font-size: 32px;
 }
 
 .option {
-  margin: auto;
-  width: 150px;
+  width: 90px;
+}
+
+.option.left {
+  padding-right: 90px;
+}
+
+.option input {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.directions {
+  width: 310px;
+  height: 280px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: auto;
 }
 
 .code {
   font-size: 25px;
   font-style: italic;
+}
+
+input:checked + svg rect {
+  fill: lightslategray;
 }
