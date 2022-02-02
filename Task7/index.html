@@ -14,37 +14,75 @@
     <title>BG Generator</title>
   </head>
   <body>
-    <h1>Linear gradient generator</h1>
-    <h2>Colors</h2>
-    <form>
-      <input type="color" name="color1" id="color1" value="#ffa500" />
-      <input type="color" name="color2" id="color2" value="#ffff00" />
-      <h2>Direction</h2>
-      <div class="option">
-        <label for="bottom">To bottom</label>
-        <input
-          type="radio"
-          value="to bottom"
-          name="direction"
-          id="bottom"
-          checked
-        />
-      </div>
-      <div class="option">
-        <label for="top">To top</label>
-        <input type="radio" value="to top" name="direction" id="top" />
-      </div>
-      <div class="option">
-        <label for="left">To left</label>
-        <input type="radio" value="to left" name="direction" id="left" />
-      </div>
-      <div class="option">
-        <label for="right">To right</label>
-        <input type="radio" value="to right" name="direction" id="right" />
-      </div>
-      <h2>CSS Code</h2>
-      <p class="code">linear-gradient( to bottom,#ffa500, #ffff00)</p>
-    </form>
+    <div class="wrapper">
+      <h1>Linear gradient generator</h1>
+      <h2>Colors</h2>
+      <form>
+        <input type="color" name="color1" id="color1" value="#ffa500" />
+        <input type="color" name="color2" id="color2" value="#ffff00" />
+        <h2>Direction</h2>
+        <div class="option">
+          <label for="left-top">To left top</label>
+          <input
+            type="radio"
+            value="to left top"
+            name="direction"
+            id="left-top"
+          />
+          <div class="option">
+            <label for="top">To top</label>
+            <input type="radio" value="to top" name="direction" id="top" />
+          </div>
+          <div class="option">
+            <label for="right-top">To right top</label>
+            <input
+              type="radio"
+              value="to right top"
+              name="direction"
+              id="right-top"
+            />
+          </div>
+          <div class="option">
+            <label for="right">To right</label>
+            <input type="radio" value="to right" name="direction" id="right" />
+          </div>
+          <div class="option">
+            <label for="right-bottom">To bottom right</label>
+            <input
+              type="radio"
+              value="to bottom right"
+              name="direction"
+              id="bottom-right"
+            />
+          </div>
+          <div class="option">
+            <label for="bottom">To bottom</label>
+            <input
+              type="radio"
+              value="to bottom"
+              name="direction"
+              id="bottom"
+              checked
+            />
+          </div>
+          <div class="option">
+            <label for="bottom-left">To bottom left</label>
+            <input
+              type="radio"
+              value="to bottom left"
+              name="direction"
+              id="bottom-left"
+            />
+          </div>
+        </div>
+        <div class="option">
+          <label for="left">To left</label>
+          <input type="radio" value="to left" name="direction" id="left" />
+        </div>
+        <h2>CSS Code</h2>
+        <p class="code">linear-gradient( to bottom,#ffa500, #ffff00)</p>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
