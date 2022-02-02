@@ -1,0 +1,23 @@
+body {
+  height: 100vh;
+  background-image: linear-gradient(#ffa500, #ffff00);
+  background-repeat: no-repeat;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 50px;
+}
+
+.option {
+  margin: auto;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.code {
+  font-size: 25px;
+  font-style: italic;
+}

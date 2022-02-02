@@ -1,0 +1,35 @@
+body {
+  text-align: center;
+}
+
+.text {
+  width: 400px;
+  margin: auto;
+  border: 1px black solid;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+.block {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+label {
+  font-size: 20px;
+}
+
+.btn {
+  width: 175px;
+  height: 45px;
+  background-color: orange;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.green {
+  color: green;
+}

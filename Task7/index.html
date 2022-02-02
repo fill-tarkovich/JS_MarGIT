@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>BG Generator</title>
+  </head>
+  <body>
+    <h1>Linear gradient generator</h1>
+    <h2>Colors</h2>
+    <form>
+      <input type="color" name="color1" id="color1" value="#ffa500" />
+      <input type="color" name="color2" id="color2" value="#ffff00" />
+      <h2>Direction</h2>
+      <div class="option">
+        <label for="bottom">To bottom</label>
+        <input
+          type="radio"
+          value="to bottom"
+          name="direction"
+          id="bottom"
+          checked
+        />
+      </div>
+      <div class="option">
+        <label for="top">To top</label>
+        <input type="radio" value="to top" name="direction" id="top" />
+      </div>
+      <div class="option">
+        <label for="left">To left</label>
+        <input type="radio" value="to left" name="direction" id="left" />
+      </div>
+      <div class="option">
+        <label for="right">To right</label>
+        <input type="radio" value="to right" name="direction" id="right" />
+      </div>
+      <h2>CSS Code</h2>
+      <p class="code">linear-gradient( to bottom,#ffa500, #ffff00)</p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
