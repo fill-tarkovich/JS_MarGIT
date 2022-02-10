@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Car Plates</title>
+  </head>
+  <body>
+    <section class="search">
+      <h1>Search car by license plate</h1>
+      <div class="search_input">
+        <label for="number">License plate number</label>
+        <input type="text" id="number" />
+      </div>
+      <button class="button" id="search">Search</button>
+      <p class="output"></p>
+    </section>
+    <section class="database">
+      <div class="database-left">
+        <h1>Insert car data</h1>
+        <div class="form">
+          <div class="labels">
+            <label for="license"> License number </label>
+            <label for="maker"> Car maker </label>
+            <label for="model"> Car model </label>
+            <label for="owner"> Car Owner </label>
+            <label for="price"> Car price </label>
+            <label for="color"> Car color </label>
+          </div>
+          <div class="inputs">
+            <input type="text" name="licence" id="licence" />
+            <input type="text" name="maker" id="maker" />
+            <input type="text" name="model" id="model" />
+            <input type="text" name="owner" id="owner" />
+            <input type="text" name="price" id="price" />
+            <input type="text" name="color" id="color" />
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="button" id="add">Add car</button>
+          <button class="button" id="reset">Reset</button>
+        </div>
+      </div>
+      <div class="database-right">
+        <h1>Cars database</h1>
+        <table class="table">
+          <tr>
+            <th>Licence</th>
+            <th>Maker</th>
+            <th>Model</th>
+            <th>Owner</th>
+            <th>Price</th>
+            <th>Color</th>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
