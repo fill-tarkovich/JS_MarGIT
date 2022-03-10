@@ -32,6 +32,7 @@ h1 {
   flex-wrap: wrap;
   margin: auto;
   justify-self: center;
+  justify-content: flex-start;
 }
 
 .card {
@@ -39,8 +40,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
-  height: 260px;
+  width: 200px;
+  height: 300px;
   background-color: white;
   margin-right: 25px;
   margin-bottom: 25px;
@@ -51,18 +52,20 @@ h1 {
 .card:hover {
   transform: scale(105%);
   box-shadow: 0px 5px 5px 0px #141414;
+  cursor: pointer;
 }
 
 .card_title {
   background-color: gray;
   position: absolute;
-  width: 150px;
+  width: 200px;
   height: 20%;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0 0 7px 7px;
+  text-transform: capitalize;
 }
 
 .card:hover .card_title {
@@ -71,11 +74,28 @@ h1 {
 
 .card img {
   position: absolute;
-  width: 90%;
-  top: 10%;
+  width: 100%;
   filter: saturate(15%);
 }
 
 .card:hover img {
   filter: saturate(100%);
+}
+
+.card ul {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 2px;
+  left: 20px;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card ul li {
+  margin-right: 20px;
+  font-size: 10px;
+  text-decoration: underline;
 }
