@@ -5,6 +5,7 @@ const overlay = document.querySelector("#overlay");
 const closeBtn = document.querySelector("#close");
 const scoreText = document.querySelector("#score");
 const resultText = document.querySelector("#result");
+let soundTrack = document.querySelector(".sound-track");
 
 let score = 0;
 let pace = 1000;
@@ -43,12 +44,19 @@ const startGame = () => {
       return pickNew(active);
     }
   }
+  start.style.display = "none";
+  finish.style.display = "unset";
+  soundTrack.play();
 };
 
 const endGame = () => {
   clearTimeout(timer);
   overlay.style.visibility = "visible";
   resultText.textContent = `Your score is ${score}`;
+  let audio = new Audio("0008820.mp3");
+  soundTrack.pause();
+  audio.play();
+  audio.volume = 0.3;
 };
 
 const reloadGame = () => {
